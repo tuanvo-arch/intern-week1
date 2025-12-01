@@ -28,7 +28,7 @@ WEEK01/
 
 # Trình tự project (Project Workflow)
 
-### 1️Bước 1: Thu thập dữ liệu (Extract)
+### Bước 1: Thu thập dữ liệu (Extract)
 Kết nối API Apify để lấy dữ liệu thô.
 - **Input:** Cấu hình trong `crawler.py`.
 - **Output:** File `data_raw/locations_raw.json`.
@@ -37,7 +37,7 @@ Kết nối API Apify để lấy dữ liệu thô.
 python google_place_cleaner/scripts/crawler.py
 ````
 
-### 2️Bước 2: Làm sạch dữ liệu (Transform)
+### Bước 2: Làm sạch dữ liệu (Transform)
 
 Xử lý JSON, chuẩn hóa dữ liệu và tách bảng.
 
@@ -47,7 +47,7 @@ Xử lý JSON, chuẩn hóa dữ liệu và tách bảng.
 python google_place_cleaner/scripts/scripts.py
 ```
 
-### 3️Bước 3: Load vào Database (Load)
+### Bước 3: Load vào Database (Load)
 
 Tự động import các file CSV vào SQLite.
 
